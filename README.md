@@ -19,6 +19,10 @@ falls under one of three categories:
 * :grey_question: Required further insight
 * :bulb: Random thoughts/comments
 
+### Table of Contents
+[A Swift Tour](#a-swift-tour)  
+[The Basics](#the-basics)  
+
 A Swift Tour
 ------------
 
