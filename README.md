@@ -22,6 +22,9 @@ falls under one of three categories:
 ### Table of Contents
 [A Swift Tour](#a-swift-tour)  
 [The Basics](#the-basics)  
+[Basic Operators](#basic-operators)  
+
+<br />
 
 A Swift Tour
 ------------
@@ -94,7 +97,51 @@ func anyCommonElements<
         return commonElements
 }
 ```
+
 <br />
 
 The Basics
 ----------
+
+### :bulb: Keywords as Names
+
+> […] you should avoid using keywords as names unless you have absolutely no
+> choice.
+
+When will this ever happen? Should the backticks feature even exist? I guess
+\`class\` is a little better than clazz at least.
+
+### :exclamation: Idiomatic `Int`/`UInt` Usage
+
+> Use `UInt` only when you specifically need an unsigned integer type with the
+> same size as the platform's native word swize. If this is not the case, `Int`
+> is preferred, evn when the values to be stored are known to be non-negative.
+
+### :exclamation: Type Inference of Literals
+
+> The rules for combining numeric constants and variables are different from the
+> rules for numeric literals. The literal value `3` can be added directly to the
+> literal value `0.14159`, because number literals do not have an explicit type
+> in and of themselves. Their type is inferred only at the point that they are
+> evaluated by the compiler.
+
+### :grey_question: Common Initialism Conventions
+
+``` swift
+let http404Error = (404, "Not Found")
+```
+
+Does convention dictate that this variable should instead be named
+`HTTP404Error`?
+[Here](https://developer.apple.com/library/prerelease/ios/documentation/Cocoa/Reference/Foundation/Classes/NSURLRequest_Class/index.html#//apple_ref/occ/instp/NSURLRequest/URL)'s
+an example in the frameworks…
+
+### :bulb: Optional Binding
+
+Both `if let` and `if var` can be used for optional binding, but the former
+seems to be much more prevalent.
+
+<br />
+
+Basic Operators
+---------------
