@@ -31,7 +31,7 @@ categories:
 A Swift Tour
 ------------
 
-### :grey_question: Global Scope
+#### :grey_question: Global Scope
 
 > Code written at global scope is used as the entry point for the
 program.
@@ -52,7 +52,7 @@ UIApplicationMain(C_ARGC, C_ARGV, NSStringFromClass(UIApplication), NSStringFrom
 ```
 and your app will still run!
 
-### :grey_question: Explicit Enum Values
+#### :grey_question: Explicit Enum Values
 
 ``` swift
 enum Rank: Int {
@@ -75,7 +75,7 @@ enum Test: Int {
 Implicit raw values are always incremented by 1 from that of the value before
 it. An error will occur if a value is auto-incremented into one already used.
 
-### :grey_question: anyCommonElements Experiment
+#### :grey_question: anyCommonElements Experiment
 
 > Modify the `anyCommonElements` function to make a function that returns an
 > array of the elements that any two sequences have in common.
@@ -105,7 +105,7 @@ func anyCommonElements<
 The Basics
 ----------
 
-### :bulb: Keywords as Names
+#### :bulb: Keywords as Names
 
 > […] you should avoid using keywords as names unless you have absolutely no
 > choice.
@@ -113,13 +113,13 @@ The Basics
 When will this ever happen? Should the backticks feature even exist? I guess
 \`class\` is a little better than clazz at least.
 
-### :exclamation: Idiomatic `Int`/`UInt` Usage
+#### :exclamation: Idiomatic `Int`/`UInt` Usage
 
 > Use `UInt` only when you specifically need an unsigned integer type with the
 > same size as the platform's native word swize. If this is not the case, `Int`
 > is preferred, evn when the values to be stored are known to be non-negative.
 
-### :exclamation: Type Inference of Literals
+#### :exclamation: Type Inference of Literals
 
 > The rules for combining numeric constants and variables are different from the
 > rules for numeric literals. The literal value `3` can be added directly to the
@@ -127,7 +127,7 @@ When will this ever happen? Should the backticks feature even exist? I guess
 > in and of themselves. Their type is inferred only at the point that they are
 > evaluated by the compiler.
 
-### :grey_question: Common Initialism Conventions
+#### :grey_question: Common Initialism Conventions
 
 ``` swift
 let http404Error = (404, "Not Found")
@@ -138,7 +138,7 @@ Does convention dictate that this variable should instead be named
 [Here](https://developer.apple.com/library/prerelease/ios/documentation/Cocoa/Reference/Foundation/Classes/NSURLRequest_Class/index.html#//apple_ref/occ/instp/NSURLRequest/URL)'s
 an example in the frameworks…
 
-### :bulb: Optional Binding
+#### :bulb: Optional Binding
 
 Both `if let` and `if var` can be used for optional binding, but the former
 seems to be much more prevalent.
@@ -148,7 +148,7 @@ seems to be much more prevalent.
 Basic Operators
 ---------------
 
-### :grey_question: Remainder Operator Type Inference
+#### :grey_question: Remainder Operator Type Inference
 
 ``` swift
 8 % 2.5   // equals 0.5
@@ -186,7 +186,7 @@ implicitly convert types.
 Strings and Characters
 ----------------------
 
-### :bulb: A Well-Written Chapter!
+#### :bulb: A Well-Written Chapter!
 
 <br />
 
