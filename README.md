@@ -12,8 +12,8 @@ This isn't a summary of the entire language; the obvious, simple, and expected
 aspects of it are not mentioned here.
 
 This summary is divided up into the same sections as the language guide, and
-follows its order exactly. Keywords are denoted in **bold**, and each section
-falls under one of three categories:
+follows its order exactly. Each sub-section falls under one of three
+categories:
 
 * :exclamation: Important to remember
 * :grey_question: Required further insight
@@ -23,6 +23,7 @@ falls under one of three categories:
 [A Swift Tour](#a-swift-tour)  
 [The Basics](#the-basics)  
 [Basic Operators](#basic-operators)  
+[Strings and Characters](#strings-and-characters)  
 
 <br />
 
@@ -145,3 +146,41 @@ seems to be much more prevalent.
 
 Basic Operators
 ---------------
+
+### :grey_question: Remainder Operator Type Inference
+
+``` swift
+8 % 2.5   // equals 0.5
+```
+
+> In this example, `8` divided by `2.5` equals `3`, with a remainder of `0.5`,
+> so the remainder operator returns a `Double` value of `0.5`.
+
+Would the remainder of two `Float`s also return a `Double`?
+
+Nope:
+
+``` swift
+let x: Float = 1.5
+let y: Float = 1
+let z = x % y   // of type Float
+```
+
+If you try `Float(1.5) % 1` you'll also get a `Float` because Swift will infer
+the `1` literal to be a `Float` in this context. Pretty neat! But if you try
+this:
+
+``` swift
+let x: Float = 1.5
+let y: Double = 1
+let z = x % y
+```
+
+You'll get the error message `error: 'Float' is not convertible to 'UInt8'`,
+which I assume is an unintentionally cryptic way of saying that Swift doesn't
+implicitly convert types.
+
+<br />
+
+Strings and Characters
+----------------------
