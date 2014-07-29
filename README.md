@@ -24,6 +24,7 @@ categories:
 [The Basics](#the-basics)  
 [Basic Operators](#basic-operators)  
 [Strings and Characters](#strings-and-characters)  
+[Collection Types](#collection-types)  
 
 <br />
 
@@ -184,3 +185,10 @@ implicitly convert types.
 
 Strings and Characters
 ----------------------
+
+### :bulb: A Well-Written Chapter!
+
+<br />
+
+Collection Types
+----------------
