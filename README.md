@@ -25,6 +25,7 @@ categories:
 [Basic Operators](#basic-operators)  
 [Strings and Characters](#strings-and-characters)  
 [Collection Types](#collection-types)  
+[Control Flow](#control-flow)  
 
 <br />
 
@@ -192,3 +193,22 @@ Strings and Characters
 
 Collection Types
 ----------------
+
+#### :grey_question: Array Type Inference
+
+> Thanks to type inference, you don't need to specify the type to be stored in
+> the array when using [the repeated value] initializer, because it can be
+> inferred from the default value:
+>
+> ``` swift
+> var anotherThreeDoubles = [Double](count: 3, repeatedValue: 2.5)
+> ```
+
+After thinking about it for a while, I believe this to be a mistake. Using a
+repeated value of `1` will still yield a `[Double]` since it's explicitly stated
+in the initializer. They probably intended to use `Array(count: 3,
+repeatedValue: 2.5)`, at which point the above quotation is true. I submitted
+this as an issue on their bug reporter.
+
+Control Flow
+------------
