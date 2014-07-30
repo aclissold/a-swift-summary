@@ -28,6 +28,7 @@ categories:
 [Control Flow](#control-flow)  
 [Functions](#functions)  
 [Closures](#closures)  
+[Enumerations](#enumerations)  
 
 <br />
 
@@ -259,6 +260,14 @@ Functions
 > The values passed to a variadic parameter are made available within the
 > function's body as an array of the appropriate type.
 
+<br />
+
 Closures
 --------
 
+#### :bulb: A Well-Written Chapter!
+
+<br />
+
+Enumerations
+------------
