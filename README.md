@@ -183,6 +183,15 @@ You'll get the error message `error: 'Float' is not convertible to 'UInt8'`,
 which I assume is an unintentionally cryptic way of saying that Swift doesn't
 implicitly convert types.
 
+#### :grey_question: Rigorous Closed Range Operator Definition
+
+> The *closed range operator* `(a...b)` defines a range that runs from `a` to
+> `b`, and includes the values `a` and `b`.
+
+What happens if `a` and `b` have the same value? It turns out that the loop will
+execute once, not twice. So `for i in 1...1` would be a redundantly silly way to
+say "do this once."
+
 <br />
 
 Strings and Characters
