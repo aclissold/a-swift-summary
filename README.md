@@ -27,6 +27,7 @@ categories:
 [Collection Types](#collection-types)  
 [Control Flow](#control-flow)  
 [Functions](#functions)  
+[Closures](#closures)  
 
 <br />
 
@@ -247,3 +248,17 @@ It executes 10 times either way, but if you uncomment the `break`, it will print
 
 Functions
 ---------
+
+#### :exclamation: Automatic External Parameter Names
+
+> You can opt out of this behavior by writing an underscore (_) instead of an
+> explicit external name when you define the parameter.
+
+#### :exclamation: Variadic Parameter Types
+
+> The values passed to a variadic parameter are made available within the
+> function's body as an array of the appropriate type.
+
+Closures
+--------
+
