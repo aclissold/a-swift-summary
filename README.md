@@ -31,6 +31,7 @@ categories:
 [Enumerations](#enumerations)  
 [Classes and Structure](#classes-and-structures)  
 [Properties](#properties)  
+[Methods](#methods)  
 
 <br />
 
@@ -309,3 +310,19 @@ about though.
 
 Properties
 ----------
+
+#### :bulb: Property Observers
+
+> If you assign a value to a property within its own `didSet` observer, the new
+> value that you assign will replace the one that was just set.
+
+Good thing this doesn't cause an infinite `didSet` loop!
+
+#### :exclamation: Lazy Evaluation
+
+> Global constants and variables are always computed lazily.
+
+<br />
+
+Methods
+-------
