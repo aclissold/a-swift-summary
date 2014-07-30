@@ -30,6 +30,7 @@ categories:
 [Closures](#closures)  
 [Enumerations](#enumerations)  
 [Classes and Structure](#classes-and-structures)  
+[Properties](#properties)  
 
 <br />
 
@@ -283,3 +284,28 @@ reading twice.
 
 Classes and Structures
 ----------------------
+
+#### :exclamation: Memberwise Initializers
+
+> All structures have an automatically-generated *memberwise initializer*, which
+> you can use to initialize the member properties of new structure instances.
+
+#### :bulb: Identity Operators and Strings
+
+The "identical to" operator (`===`) checks if two variables or constants refer
+to the same class instances.
+
+A `String` is passed around by reference behind the
+scenes, and two values may even lazily refer to the same reference. How might
+`===` behave for two value types with the same value but different underlying
+references?
+
+It turns out that there's no way to play around with this, because `===` only
+works for types conforming to the `AnyObject` protocol, and `non-class type
+'String' cannot conform to class protocol 'AnyObject'`. Interesting to think
+about though.
+
+<br />
+
+Properties
+----------
