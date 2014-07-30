@@ -29,6 +29,7 @@ categories:
 [Functions](#functions)  
 [Closures](#closures)  
 [Enumerations](#enumerations)  
+[Classes and Structure](#classes-and-structures)  
 
 <br />
 
@@ -271,3 +272,14 @@ Closures
 
 Enumerations
 ------------
+
+#### :bulb: Associated Values
+
+The ability to associate values with members of an enumeration is a language
+feature I've never even heard of before, so that section is definitely worth
+reading twice.
+
+<br />
+
+Classes and Structures
+----------------------
