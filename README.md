@@ -26,6 +26,7 @@ categories:
 [Strings and Characters](#strings-and-characters)  
 [Collection Types](#collection-types)  
 [Control Flow](#control-flow)  
+[Functions](#functions)  
 
 <br />
 
@@ -210,5 +211,30 @@ in the initializer. They probably intended to use `Array(count: 3,
 repeatedValue: 2.5)`, at which point the above quotation is true. I submitted
 this as an issue on their bug reporter.
 
+<br />
+
 Control Flow
 ------------
+
+#### :bulb: Break in a Loop Statement
+
+> When used inside a loop statement, `break` ends the loop's execution
+> immediately.
+
+The following loop has an interesting (although possibly obvious) property:
+
+``` swift
+var i: Int
+for i = 0; i < 10; ++i {
+    // if i == 9 { break }
+}
+println(i)
+```
+
+It executes 10 times either way, but if you uncomment the `break`, it will print
+`9` instead of `10`.
+
+<br />
+
+Functions
+---------
