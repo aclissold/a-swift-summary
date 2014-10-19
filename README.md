@@ -37,6 +37,7 @@ categories:
 [Initialization](#initialization)  
 [Deinitialization](#deinitialization)  
 [Automatic Reference Counting](#automatic-reference-counting)  
+[Optional Chaining](#optional-chaining)  
 
 <br />
 
@@ -438,3 +439,23 @@ yourself firsthand and tinker.
 
 Optional Chaining
 -----------------
+
+#### :exclamation: Chaining on Non-Optionals
+
+> […] the result of an optional chaining call is always an optional value,
+> even if the property, method, or subscript you are querying returns a
+> non-optional value.
+
+#### :grey_question: Prefix Increment Operator on Optionals
+
+An example of using the postfix increment operator on a chained optional is
+given:
+
+``` swift
+testScores["Bev"]?[0]++
+```
+
+But where should `++` go for prefix incrementing? Is it even possible?
+
+Type Casting
+------------
