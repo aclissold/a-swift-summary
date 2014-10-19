@@ -41,6 +41,7 @@ Closures
 [Type Casting](#type-casting)  
 Nested Types  
 [Extensions](#extensions)  
+[Protocols](#protocols)  
 
 (For those without hyperlinks, I had nothing to add.)
 
@@ -513,3 +514,15 @@ effect.
 
 Protocols
 ---------
+
+#### :grey_exclamation: Protocols Shared by Reference and Value Types
+
+> Always prefix type property requirements with the `class` keyword when you
+> define them in a protocol. This rule pertains even though type property
+> requirements are prefixed with the `static` keyword when implemented by a
+> structure or enumeration.
+
+<br />
+
+Generics
+--------
