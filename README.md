@@ -33,6 +33,7 @@ categories:
 [Properties](#properties)  
 [Methods](#methods)  
 [Subscripts](#subscripts)  
+[Inheritance](#inheritance)  
 
 <br />
 
@@ -340,3 +341,10 @@ Methods
 
 Subscripts
 ----------
+
+#### :exclamation: Subscript Overloading
+
+> [The] definition of multiple subscripts is known as *subscript overloading*.
+
+Inheritance
+-----------
