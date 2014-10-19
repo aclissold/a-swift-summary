@@ -23,11 +23,11 @@ categories:
 [A Swift Tour](#a-swift-tour)  
 [The Basics](#the-basics)  
 [Basic Operators](#basic-operators)  
-[Strings and Characters](#strings-and-characters)  
+Strings and Characters  
 [Collection Types](#collection-types)  
 [Control Flow](#control-flow)  
 [Functions](#functions)  
-[Closures](#closures)  
+Closures  
 [Enumerations](#enumerations)  
 [Classes and Structure](#classes-and-structures)  
 [Properties](#properties)  
@@ -39,6 +39,9 @@ categories:
 [Automatic Reference Counting](#automatic-reference-counting)  
 [Optional Chaining](#optional-chaining)  
 [Type Casting](#type-casting)  
+Nested Types  
+
+(For those without hyperlinks, I had nothing to add.)
 
 <br />
 
@@ -206,13 +209,6 @@ say "do this once."
 
 <br />
 
-Strings and Characters
-----------------------
-
-#### :bulb: A Well-Written Chapter!
-
-<br />
-
 Collection Types
 ----------------
 
@@ -269,13 +265,6 @@ Functions
 
 > The values passed to a variadic parameter are made available within the
 > function's body as an array of the appropriate type.
-
-<br />
-
-Closures
---------
-
-#### :bulb: A Well-Written Chapter!
 
 <br />
 
@@ -484,6 +473,3 @@ type is known to be different than that of the instance (e.g., an `NSArray`):
 >     println("Movie: '\(movie.name)', dir. \(movie.director)")
 > }
 > ```
-
-Nested Types
-------------
