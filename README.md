@@ -8,18 +8,20 @@ language guide, and the formal grammar. This document falls in-between the tour
 and guide—it's a brief description of all the interesting, surprising, and
 unexpected aspects of the language that I came across while reading the book.
 
-This isn't a summary of the entire language; the obvious, simple, and expected
-aspects of it are not mentioned here.
+It isn't a recap of the entire book; the obvious, simple, and expected aspects
+of it are not mentioned here.
 
 This summary is divided up into the same sections as the language guide, and
-follows its order exactly. Each sub-section falls under one of three
-categories:
+follows its order exactly. Each subsection falls under one of three categories:
 
 * :grey_exclamation: Important to remember
 * :question: Required further insight
 * :bulb: Random thought/comment
 
 ### Table of Contents
+
+For those without hyperlinks, I had nothing to add.
+
 [A Swift Tour](#a-swift-tour)  
 [The Basics](#the-basics)  
 [Basic Operators](#basic-operators)  
@@ -44,7 +46,15 @@ Nested Types
 [Protocols](#protocols)  
 [Generics](#generics)  
 
-(For those without hyperlinks, I had nothing to add.)
+*Disclaimer: all direct quotations from* The Swift Programming Language *are
+presented here in*
+
+> blockquotes
+
+*and are used strictly for non-commercial,
+educational purposes under Fair Use
+([17 U.S.C. § 107](http://www.law.cornell.edu/uscode/text/17/107)). I am
+neither affiliated with nor endorsed by Apple.*
 
 <br />
 
