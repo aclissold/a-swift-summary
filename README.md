@@ -35,6 +35,7 @@ categories:
 [Subscripts](#subscripts)  
 [Inheritance](#inheritance)  
 [Initialization](#initialization)  
+[Deinitialization](#deinitialization)  
 
 <br />
 
@@ -410,3 +411,11 @@ think of a use case for `init!`.
 
 Deinitialization
 ----------------
+
+#### :exclamation: `super.deinit()`?
+
+> […] the superclass deinitializer is called automatically at the end of a
+> subclass deinitializer implementation.
+
+Automatic Reference Counting
+----------------------------
