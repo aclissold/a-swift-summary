@@ -15,8 +15,8 @@ This summary is divided up into the same sections as the language guide, and
 follows its order exactly. Each sub-section falls under one of three
 categories:
 
-* :exclamation: Important to remember
-* :grey_question: Required further insight
+* :grey_exclamation: Important to remember
+* :question: Required further insight
 * :bulb: Random thought/comment
 
 ### Table of Contents
@@ -44,7 +44,7 @@ categories:
 A Swift Tour
 ------------
 
-#### :grey_question: Global Scope
+#### :question: Global Scope
 
 > Code written at global scope is used as the entry point for the
 program.
@@ -65,7 +65,7 @@ UIApplicationMain(C_ARGC, C_ARGV, NSStringFromClass(UIApplication), NSStringFrom
 ```
 and your app will still run!
 
-#### :grey_question: Explicit Enum Values
+#### :question: Explicit Enum Values
 
 ``` swift
 enum Rank: Int {
@@ -88,7 +88,7 @@ enum Test: Int {
 Implicit raw values are always incremented by 1 from that of the value before
 it. An error will occur if a value is auto-incremented into one already used.
 
-#### :grey_question: anyCommonElements Experiment
+#### :question: anyCommonElements Experiment
 
 > Modify the `anyCommonElements` function to make a function that returns an
 > array of the elements that any two sequences have in common.
@@ -126,13 +126,13 @@ The Basics
 When will this ever happen? Should the backticks feature even exist? I guess
 \`class\` is a little better than clazz at least.
 
-#### :exclamation: Idiomatic `Int`/`UInt` Usage
+#### :grey_exclamation: Idiomatic `Int`/`UInt` Usage
 
 > Use `UInt` only when you specifically need an unsigned integer type with the
 > same size as the platform's native word swize. If this is not the case, `Int`
 > is preferred, evn when the values to be stored are known to be non-negative.
 
-#### :exclamation: Type Inference of Literals
+#### :grey_exclamation: Type Inference of Literals
 
 > The rules for combining numeric constants and variables are different from the
 > rules for numeric literals. The literal value `3` can be added directly to the
@@ -140,7 +140,7 @@ When will this ever happen? Should the backticks feature even exist? I guess
 > in and of themselves. Their type is inferred only at the point that they are
 > evaluated by the compiler.
 
-#### :grey_question: Common Initialism Conventions
+#### :question: Common Initialism Conventions
 
 ``` swift
 let http404Error = (404, "Not Found")
@@ -161,7 +161,7 @@ seems to be much more prevalent.
 Basic Operators
 ---------------
 
-#### :grey_question: Remainder Operator Type Inference
+#### :question: Remainder Operator Type Inference
 
 ``` swift
 8 % 2.5   // equals 0.5
@@ -194,7 +194,7 @@ You'll get the error message `error: 'Float' is not convertible to 'UInt8'`,
 which I assume is an unintentionally cryptic way of saying that Swift doesn't
 implicitly convert types.
 
-#### :grey_question: Rigorous Closed Range Operator Definition
+#### :question: Rigorous Closed Range Operator Definition
 
 > The *closed range operator* `(a...b)` defines a range that runs from `a` to
 > `b`, and includes the values `a` and `b`.
@@ -215,7 +215,7 @@ Strings and Characters
 Collection Types
 ----------------
 
-#### :grey_question: Array Type Inference
+#### :question: Array Type Inference
 
 > Thanks to type inference, you don't need to specify the type to be stored in
 > the array when using [the repeated value] initializer, because it can be
@@ -259,12 +259,12 @@ It executes 10 times either way, but if you uncomment the `break`, it will print
 Functions
 ---------
 
-#### :exclamation: Automatic External Parameter Names
+#### :grey_exclamation: Automatic External Parameter Names
 
 > You can opt out of this behavior by writing an underscore (_) instead of an
 > explicit external name when you define the parameter.
 
-#### :exclamation: Variadic Parameter Types
+#### :grey_exclamation: Variadic Parameter Types
 
 > The values passed to a variadic parameter are made available within the
 > function's body as an array of the appropriate type.
@@ -292,7 +292,7 @@ reading twice.
 Classes and Structures
 ----------------------
 
-#### :exclamation: Memberwise Initializers
+#### :grey_exclamation: Memberwise Initializers
 
 > All structures have an automatically-generated *memberwise initializer*, which
 > you can use to initialize the member properties of new structure instances.
@@ -324,7 +324,7 @@ Properties
 
 Good thing this doesn't cause an infinite `didSet` loop!
 
-#### :exclamation: Lazy Evaluation
+#### :grey_exclamation: Lazy Evaluation
 
 > Global constants and variables are always computed lazily.
 
@@ -333,12 +333,12 @@ Good thing this doesn't cause an infinite `didSet` loop!
 Methods
 -------
 
-#### :exclamation: Methods on `struct` and `enum`
+#### :grey_exclamation: Methods on `struct` and `enum`
 
 > The fact that structures and enumerations can define methods in Swift is a
 > major difference from C and Objective-C.
 
-#### :exclamation: Implicit `self` Compliance
+#### :grey_exclamation: Implicit `self` Compliance
 
 > Within the body of a type method, the implicit `self` property refers to the
 > type itself, rather than an instance of that type.
@@ -346,29 +346,29 @@ Methods
 Subscripts
 ----------
 
-#### :exclamation: Subscript Overloading
+#### :grey_exclamation: Subscript Overloading
 
 > [The] definition of multiple subscripts is known as *subscript overloading*.
 
 Inheritance
 -----------
 
-#### :exclamation: Classes vs. Other Types
+#### :grey_exclamation: Classes vs. Other Types
 
 > Inheritance is a fundamental behavior that differentiates classes from other
 > types in Swift.
 
-#### :exclamation: How to Call `super` on Subscripts
+#### :grey_exclamation: How to Call `super` on Subscripts
 
 > An overridden subscript for `someIndex` can access the superclass version of
 > the same subscript as `super[someIndex]` from within the overriding subscript
 > implementation.
 
-#### :exclamation: Overriding Properties
+#### :grey_exclamation: Overriding Properties
 
 > You can override an inherited instance or class property.
 
-#### :exclamation: Overriding Property Access
+#### :grey_exclamation: Overriding Property Access
 
 > You can present an inherited read-only property as a read-write property by
 > providing both a getter and a setter in your subclass property override. You
@@ -378,24 +378,24 @@ Inheritance
 Initialization
 --------------
 
-#### :exclamation: Initial Values
+#### :grey_exclamation: Initial Values
 
 > Classes and structures *must* set all of their stored properties to an
 > appropriate initial value by the time an instance of that class or structure
 > is created.
 
-#### :exclamation: Calling Other Initializers
+#### :grey_exclamation: Calling Other Initializers
 
 The process of an initializer calling another is referred to as *initializer
 delegation*.
 
-#### :exclamation: Initializers on Value Types
+#### :grey_exclamation: Initializers on Value Types
 
 > If you define a custom initializer for a value type, you will no longer have
 > access to the default initializer (or the memberwise initializer, if it is a
 > structure) for that type.
 
-#### :exclamation: Failable Initializer Syntax
+#### :grey_exclamation: Failable Initializer Syntax
 
 > Although you write `return nil` to trigger an initialization failure, you do
 > not use the `return` keyword to indicate initialization success.
@@ -414,7 +414,7 @@ think of a use case for `init!`.
 Deinitialization
 ----------------
 
-#### :exclamation: `super.deinit()`?
+#### :grey_exclamation: `super.deinit()`?
 
 > […] the superclass deinitializer is called automatically at the end of a
 > subclass deinitializer implementation.
@@ -422,7 +422,7 @@ Deinitialization
 Automatic Reference Counting
 ----------------------------
 
-#### :grey_question: Strong Reference Cycles
+#### :question: Strong Reference Cycles
 
 > Here's an example of how a strong reference cycle can be created by accident.
 
@@ -432,7 +432,7 @@ over or forget about entirely.
 modified to work in a Playground, because the best way of learning is to see for
 yourself firsthand and tinker.
 
-#### :exclamation: Capture Lists
+#### :grey_exclamation: Capture Lists
 
 `[unowned self]` can be read as…
 > "capture self as an unowned reference rather than a strong reference".
@@ -440,13 +440,13 @@ yourself firsthand and tinker.
 Optional Chaining
 -----------------
 
-#### :exclamation: Chaining on Non-Optionals
+#### :grey_exclamation: Chaining on Non-Optionals
 
 > […] the result of an optional chaining call is always an optional value,
 > even if the property, method, or subscript you are querying returns a
 > non-optional value.
 
-#### :grey_question: Prefix Increment Operator on Optionals
+#### :question: Prefix Increment Operator on Optionals
 
 An example of using the postfix increment operator on a chained optional is
 given:
