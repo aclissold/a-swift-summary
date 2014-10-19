@@ -40,6 +40,7 @@ Closures
 [Optional Chaining](#optional-chaining)  
 [Type Casting](#type-casting)  
 Nested Types  
+[Extensions](#extensions)  
 
 (For those without hyperlinks, I had nothing to add.)
 
@@ -487,3 +488,28 @@ type is known to be different than that of the instance (e.g., an `NSArray`):
 >     println("Movie: '\(movie.name)', dir. \(movie.director)")
 > }
 > ```
+
+<br />
+
+Extensions
+----------
+
+#### :grey_exclamation: Retroactive Modeling
+
+*retroactive modeling* is the term for
+> extending types for which you do not have access to the original source code.
+
+#### :question: Convenience Initializers for Value Types
+
+An example is given extending a `Rect` structure with
+`init(center: Point, size: Size)`. This is clearly for convenience purposes
+since all it does is compute the value of the expected `origin` argument and
+delegate to that initializer instead. However, no `convenience` keyword is
+present. This is because the concept of "convenience initializers" only truly
+applies to classes, and value types must rely on extensions to achieve the same
+effect.
+
+<br />
+
+Protocols
+---------
