@@ -42,6 +42,7 @@ Closures
 Nested Types  
 [Extensions](#extensions)  
 [Protocols](#protocols)  
+[Generics](#generics)  
 
 (For those without hyperlinks, I had nothing to add.)
 
@@ -526,3 +527,48 @@ Protocols
 
 Generics
 --------
+
+#### :grey_exclamation: Placeholder Types
+
+For a placeholder type `T` in a function parameter,
+
+> The placeholder type represented by the type parameter is replaced with an
+> *actual* type whenever the function is called.
+
+#### :grey_exclamation: Naming Type Parameters
+
+> It is traditional to use the single-character name `T` for the type parameter.
+> However, you can use any valid identifier as the type parameter name.
+
+#### :bulb: On Optionals
+
+> The `topItem` property returns an optional value of type `T`. If the stack is
+> empty, `topItem` returns `nil`; if the stack is not empty, `topItem` returns
+> the final item in the `items` array.
+
+Optionals are great!
+
+#### :bulb: Type Constraints
+
+The section on type constraints details a unique language feature and is
+definitely worth reading a second time.
+
+#### :grey_exclamation: Associated Type Syntax
+
+> Associated types are specified with the `typealias` keyword.
+
+Also,
+
+> The definition of `typealias ItemType = Int` turns the abstract type of
+> `ItemType` into a concrete type of `Int`.
+
+#### :grey_exclamation: Where Clauses
+
+> A where clause enables you to require that an associated type conforms to a
+> certain protocol, and/or that certain type parameters and associated types
+> be the same.
+
+<br />
+
+Access Control
+--------------
