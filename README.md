@@ -17,7 +17,7 @@ categories:
 
 * :exclamation: Important to remember
 * :grey_question: Required further insight
-* :bulb: Random thoughts/comments
+* :bulb: Random thought/comment
 
 ### Table of Contents
 [A Swift Tour](#a-swift-tour)  
@@ -32,6 +32,7 @@ categories:
 [Classes and Structure](#classes-and-structures)  
 [Properties](#properties)  
 [Methods](#methods)  
+[Subscripts](#subscripts)  
 
 <br />
 
@@ -326,3 +327,16 @@ Good thing this doesn't cause an infinite `didSet` loop!
 
 Methods
 -------
+
+#### :exclamation: Methods on `struct` and `enum`
+
+> The fact that structures and enumerations can define methods in Swift is a
+> major difference from C and Objective-C.
+
+#### :exclamation: Implicit `self` Compliance
+
+> Within the body of a type method, the implicit `self` property refers to the
+> type itself, rather than an instance of that type.
+
+Subscripts
+----------
