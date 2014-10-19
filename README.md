@@ -34,6 +34,7 @@ categories:
 [Methods](#methods)  
 [Subscripts](#subscripts)  
 [Inheritance](#inheritance)  
+[Initialization](#initialization)  
 
 <br />
 
@@ -373,3 +374,39 @@ Inheritance
 
 Initialization
 --------------
+
+#### :exclamation: Initial Values
+
+> Classes and structures *must* set all of their stored properties to an
+> appropriate initial value by the time an instance of that class or structure
+> is created.
+
+#### :exclamation: Calling Other Initializers
+
+The process of an initializer calling another is referred to as *initializer
+delegation*.
+
+#### :exclamation: Initializers on Value Types
+
+> If you define a custom initializer for a value type, you will no longer have
+> access to the default initializer (or the memberwise initializer, if it is a
+> structure) for that type.
+
+#### :exclamation: Failable Initializer Syntax
+
+> Although you write `return nil` to trigger an initialization failure, you do
+> not use the `return` keyword to indicate initialization success.
+
+#### :bulb: `init!`
+
+Using `init?` to indicate that initialization can fail is an effective way to
+handle errors. It returns a `Type?`, implying that either a value or "nothing"
+was initialized. But when would `init!` be useful?  Implictly-unwrapped
+optionals indicate that you can be confident that the value you're currently
+working with is not `nil` without having to check it, but that it may have been
+`nil` at some point in its lifetime. Since you're working with a value from the
+very beginning of its lifetime when you obtain it from an initializer, I can't
+think of a use case for `init!`.
+
+Deinitialization
+----------------
