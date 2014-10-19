@@ -348,3 +348,28 @@ Subscripts
 
 Inheritance
 -----------
+
+#### :exclamation: Classes vs. Other Types
+
+> Inheritance is a fundamental behavior that differentiates classes from other
+> types in Swift.
+
+#### :exclamation: How to Call `super` on Subscripts
+
+> An overridden subscript for `someIndex` can access the superclass version of
+> the same subscript as `super[someIndex]` from within the overriding subscript
+> implementation.
+
+#### :exclamation: Overriding Properties
+
+> You can override an inherited instance or class property.
+
+#### :exclamation: Overriding Property Access
+
+> You can present an inherited read-only property as a read-write property by
+> providing both a getter and a setter in your subclass property override. You
+> cannot, however, present an inherited read-write property as a read-only
+> property.
+
+Initialization
+--------------
