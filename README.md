@@ -38,6 +38,7 @@ categories:
 [Deinitialization](#deinitialization)  
 [Automatic Reference Counting](#automatic-reference-counting)  
 [Optional Chaining](#optional-chaining)  
+[Type Casting](#type-casting)  
 
 <br />
 
@@ -458,4 +459,31 @@ testScores["Bev"]?[0]++
 But where should `++` go for prefix incrementing? Is it even possible?
 
 Type Casting
+------------
+
+#### :bulb: Type Inference
+
+> Swift's type checker is able to deduce that `Movie` and `Song` have a common
+> superclass of `MediaItem`, and so it infers a type of `[MediaItem]` for the
+> `library` array:
+
+Sick!!!
+
+#### :grey_exclamation: Type Checking
+
+`is` is referred to as the *type check operator*. Likewise, `as` is the *type
+cast operator*.
+
+#### :bulb: Downcasting Arrays
+
+This is a very common and helpful pattern when working with an `Array` whose
+type is known to be different than that of the instance (e.g., an `NSArray`):
+
+> ``` swift
+> for movie in someObjects as [Movie] {
+>     println("Movie: '\(movie.name)', dir. \(movie.director)")
+> }
+> ```
+
+Nested Types
 ------------
