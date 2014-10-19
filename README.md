@@ -333,12 +333,16 @@ Methods
 > Within the body of a type method, the implicit `self` property refers to the
 > type itself, rather than an instance of that type.
 
+<br />
+
 Subscripts
 ----------
 
 #### :grey_exclamation: Subscript Overloading
 
 > [The] definition of multiple subscripts is known as *subscript overloading*.
+
+<br />
 
 Inheritance
 -----------
@@ -364,6 +368,8 @@ Inheritance
 > providing both a getter and a setter in your subclass property override. You
 > cannot, however, present an inherited read-write property as a read-only
 > property.
+
+<br />
 
 Initialization
 --------------
@@ -401,6 +407,8 @@ working with is not `nil` without having to check it, but that it may have been
 very beginning of its lifetime when you obtain it from an initializer, I can't
 think of a use case for `init!`.
 
+<br />
+
 Deinitialization
 ----------------
 
@@ -408,6 +416,8 @@ Deinitialization
 
 > […] the superclass deinitializer is called automatically at the end of a
 > subclass deinitializer implementation.
+
+<br />
 
 Automatic Reference Counting
 ----------------------------
@@ -426,6 +436,8 @@ yourself firsthand and tinker.
 
 `[unowned self]` can be read as…
 > "capture self as an unowned reference rather than a strong reference".
+
+<br />
 
 Optional Chaining
 -----------------
@@ -446,6 +458,8 @@ testScores["Bev"]?[0]++
 ```
 
 But where should `++` go for prefix incrementing? Is it even possible?
+
+<br />
 
 Type Casting
 ------------
