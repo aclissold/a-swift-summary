@@ -441,9 +441,9 @@ Automatic Reference Counting
 
 This is a very important concept in ARC, and one that's easy to completely gloss
 over or forget about entirely.
-[Here's](https://gist.github.com/aclissold/dd13346d220c85b9d6ea) the sample code
-modified to work in a Playground, because the best way of learning is to see for
-yourself firsthand and tinker.
+[StrongReferenceCycles.playground](StrongReferenceCycles.playground) contains
+the sample code modified to work in a Playground, because the best way of
+learning is to see for yourself firsthand and tinker.
 
 #### :grey_exclamation: Capture Lists
 
