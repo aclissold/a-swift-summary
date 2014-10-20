@@ -18,6 +18,8 @@ follows its order exactly. Each subsection falls under one of three categories:
 * :question: Required further insight
 * :bulb: Random thought/comment
 
+<br />
+
 ### Table of Contents
 
 For those without hyperlinks, I had nothing to add.
@@ -149,7 +151,7 @@ When will this ever happen? Should the backticks feature even exist? I guess
 
 > Use `UInt` only when you specifically need an unsigned integer type with the
 > same size as the platform's native word swize. If this is not the case, `Int`
-> is preferred, evn when the values to be stored are known to be non-negative.
+> is preferred, even when the values to be stored are known to be non-negative.
 
 #### :grey_exclamation: Type Inference of Literals
 
@@ -168,7 +170,7 @@ let http404Error = (404, "Not Found")
 Does convention dictate that this variable should instead be named
 `HTTP404Error`?
 [Here](https://developer.apple.com/library/prerelease/ios/documentation/Cocoa/Reference/Foundation/Classes/NSURLRequest_Class/index.html#//apple_ref/occ/instp/NSURLRequest/URL)'s
-an example in the frameworks…
+an example in the frameworks.
 
 #### :bulb: Optional Binding
 
@@ -209,9 +211,7 @@ let y: Double = 1
 let z = x % y
 ```
 
-You'll get the error message `error: 'Float' is not convertible to 'UInt8'`,
-which I assume is an unintentionally cryptic way of saying that Swift doesn't
-implicitly convert types.
+You'll be reminded that Swift doesn't implictly convert types for you.
 
 #### :question: Rigorous Closed Range Operator Definition
 
@@ -289,7 +289,7 @@ Enumerations
 #### :bulb: Associated Values
 
 The ability to associate values with members of an enumeration is a language
-feature I've never even heard of before, so that section is definitely worth
+feature I've never even heard of before, so this section is definitely worth
 reading twice.
 
 <br />
@@ -397,8 +397,8 @@ Initialization
 
 #### :grey_exclamation: Calling Other Initializers
 
-The process of an initializer calling another is referred to as *initializer
-delegation*.
+> The process of an initializer calling another is referred to as *initializer
+> delegation*.
 
 #### :grey_exclamation: Initializers on Value Types
 
