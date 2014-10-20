@@ -46,6 +46,7 @@ Nested Types
 [Protocols](#protocols)  
 [Generics](#generics)  
 [Access Control](#access-control)  
+[Advanced Operators](#advanced-operators)  
 
 *Disclaimer: all direct quotations from* The Swift Programming Language *are
 presented here in*
@@ -628,3 +629,27 @@ entire book!
 
 Although obvious based on the definition of `private`, this is radically
 different from other programming languages.
+
+<br />
+
+Advanced Operators
+------------------
+
+#### :bulb: Overflow Operators Begin With `&`
+
+So ampersands have two uses—overflow operators and inout parameters.
+
+#### :question: Overflow Operators
+
+Are overflow operators (`&+`, `&-`, `&*`, `&/`, `&%`) unique to Swift? They're
+a clever idea—overflow is a silent killer!
+
+#### :question: Divide by Zero
+
+Division or remainder by zero causes an error, but equals zero if the overflow
+operators are used instead. Why?
+
+#### :grey_exclamation: `+=`, etc.
+
+Operators combining assignment with another operation are called *compound
+assignment operators*.
