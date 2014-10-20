@@ -45,6 +45,7 @@ Nested Types
 [Extensions](#extensions)  
 [Protocols](#protocols)  
 [Generics](#generics)  
+[Access Control](#access-control)  
 
 *Disclaimer: all direct quotations from* The Swift Programming Language *are
 presented here in*
@@ -582,3 +583,48 @@ Also,
 
 Access Control
 --------------
+
+#### :grey_exclamation: Guiding Principle
+
+This must be important, because it's the only fully-italicized sentence in the
+entire book!
+
+> Access levels in Swift follow an overall guiding principle: *No entity can be
+> defined in terms of another entity that has a lower (more restrictive) access
+> level.*
+
+#### :bulb: `private`
+
+"To hide implementation details" is the best description of the concept of
+"private" I've ever read. It's concise yet leaves no room for ambiguity.
+
+#### :grey_exclamation: Access Level Propagation
+
+> The access control level of a type also affects the default access level of
+> that type's members.
+
+#### :grey_exclamation: Inheritance Access
+
+> An override can make an inherited class member more accessible than its
+> superclass version.
+
+#### :bulb: File-Scoped Private
+
+> ``` swift
+> public class A {
+>     private func someMethod() {}
+> }
+>
+> internal class B: A {
+>     override internal func someMethod() {
+>         super.someMethod()
+>     }
+> }
+> ```
+>
+> Because superclass `A` and subclass `B` are defined in the same source file,
+> it is valid for the `B` implementation of `someMethod` to call
+> `super.someMethod()`.
+
+Although obvious based on the definition of `private`, this is radically
+different from other programming languages.
