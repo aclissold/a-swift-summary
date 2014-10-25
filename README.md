@@ -11,6 +11,8 @@ unexpected aspects of the language that I came across while reading the book.
 It isn't a recap of the entire book; the obvious, simple, and expected aspects
 of it are not mentioned here.
 
+### Format
+
 This summary is divided up into the same sections as the language guide, and
 follows its order exactly. Each subsection falls under one of three categories:
 
