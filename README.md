@@ -278,10 +278,10 @@ Functions
 > You can opt out of this behavior by writing an underscore (_) instead of an
 > explicit external name when you define the parameter.
 
-#### :grey_exclamation: Variadic Parameter Types
+#### :bulb: Variadic Parameter Types
 
-> The values passed to a variadic parameter are made available within the
-> function's body as an array of the appropriate type.
+Variadic parameters simply appear within a function's body as a typed `Array`—no
+`va_list` or `va_args`.
 
 <br />
 
@@ -331,9 +331,13 @@ Properties
 
 Good thing this doesn't cause an infinite `didSet` loop!
 
-#### :grey_exclamation: Lazy Evaluation
+#### :bulb: Lazy Evaluation
 
 > Global constants and variables are always computed lazily.
+
+Imagine the effect on startup time if you had a lot of global constants or
+variables. It would be instinctive to prefix them all with `lazy`, but
+luckily this is already the default and you don't even have to think about it.
 
 <br />
 
@@ -355,29 +359,27 @@ Methods
 Subscripts
 ----------
 
-#### :grey_exclamation: Subscript Overloading
+#### :bulb: Subscript Overloading
 
-> [The] definition of multiple subscripts is known as *subscript overloading*.
+Similar to method or operator overloading, "subscript overloading" is the term
+for defining more than one subscript on a type.
 
 <br />
 
 Inheritance
 -----------
 
-#### :grey_exclamation: Classes vs. Other Types
+#### :bulb: Classes vs. Other Types
 
-> Inheritance is a fundamental behavior that differentiates classes from other
-> types in Swift.
+The main difference between classes and other types in Swift is that they have
+reference, rather than value, semantics. The other major difference is that
+they allow inheritance.
 
 #### :grey_exclamation: How to Call `super` on Subscripts
 
 > An overridden subscript for `someIndex` can access the superclass version of
 > the same subscript as `super[someIndex]` from within the overriding subscript
 > implementation.
-
-#### :grey_exclamation: Overriding Properties
-
-> You can override an inherited instance or class property.
 
 #### :grey_exclamation: Overriding Property Access
 
@@ -391,11 +393,14 @@ Inheritance
 Initialization
 --------------
 
-#### :grey_exclamation: Initial Values
+#### :bulb: Initial Values
 
 > Classes and structures *must* set all of their stored properties to an
 > appropriate initial value by the time an instance of that class or structure
 > is created.
+
+This requirement is mostly likely just an implementation detail and may be
+removed at some point in the future.
 
 #### :grey_exclamation: Calling Other Initializers
 
@@ -421,8 +426,16 @@ was initialized. But when would `init!` be useful?  Implictly-unwrapped
 optionals indicate that you can be confident that the value you're currently
 working with is not `nil` without having to check it, but that it may have been
 `nil` at some point in its lifetime. Since you're working with a value from the
-very beginning of its lifetime when you obtain it from an initializer, I can't
-think of a use case for `init!`.
+very beginning of its lifetime when you obtain it from an initializer, there
+aren't many use cases for `init!`.
+
+It likely exists to help out with the Objective-C framework transitions to avoid
+having to manually check every single converted initializer, since "this thing
+might be nil but probably isn't" is how Objective-C works by default.
+
+One other use case is overriding a failable initializer with one that you know
+will never fail, but other than that `init!` should probably be avoided when
+possible.
 
 <br />
 
@@ -512,7 +525,7 @@ Extensions
 
 #### :grey_exclamation: Retroactive Modeling
 
-*retroactive modeling* is the term for
+*Retroactive modeling* is the term for
 > extending types for which you do not have access to the original source code.
 
 #### :question: Convenience Initializers for Value Types
@@ -567,14 +580,10 @@ Optionals are great!
 The section on type constraints details a unique language feature and is
 definitely worth reading a second time.
 
-#### :grey_exclamation: Associated Type Syntax
+#### :bulb: `typealias`
 
-> Associated types are specified with the `typealias` keyword.
-
-Also,
-
-> The definition of `typealias ItemType = Int` turns the abstract type of
-> `ItemType` into a concrete type of `Int`.
+Associated types are a concept not often found in other languages, so the
+section on it is worth reading carefully.
 
 #### :grey_exclamation: Where Clauses
 
@@ -587,10 +596,10 @@ Also,
 Access Control
 --------------
 
-#### :grey_exclamation: Guiding Principle
+#### :bulb: Guiding Principle
 
 This must be important, because it's the only fully-italicized sentence in the
-entire book!
+entire book:
 
 > Access levels in Swift follow an overall guiding principle: *No entity can be
 > defined in terms of another entity that has a lower (more restrictive) access
