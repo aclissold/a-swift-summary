@@ -306,7 +306,7 @@ Classes and Structures
 
 #### :bulb: Identity Operators and Strings
 
-The "identical to" operator (`===`) checks if two variables or constants refer
+The *identical to* operator (`===`) checks if two variables or constants refer
 to the same class instances.
 
 A `String` is passed around by reference behind the
@@ -361,7 +361,7 @@ Subscripts
 
 #### :bulb: Subscript Overloading
 
-Similar to method or operator overloading, "subscript overloading" is the term
+Similar to method or operator overloading, *subscript overloading* is the term
 for defining more than one subscript on a type.
 
 <br />
@@ -534,7 +534,7 @@ An example is given extending a `Rect` structure with
 `init(center: Point, size: Size)`. This is clearly for convenience purposes
 since all it does is compute the value of the expected `origin` argument and
 delegate to that initializer instead. However, no `convenience` keyword is
-present. This is because the concept of "convenience initializers" only truly
+present. This is because the concept of *convenience initializers* only truly
 applies to classes, and value types must rely on extensions to achieve the same
 effect.
 
@@ -608,7 +608,7 @@ entire book:
 #### :bulb: `private`
 
 "To hide implementation details" is the best description of the concept of
-"private" I've ever read. It's concise yet leaves no room for ambiguity.
+*private* I've ever read. It's concise yet leaves no room for ambiguity.
 
 #### :grey_exclamation: Access Level Propagation
 
