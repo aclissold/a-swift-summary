@@ -152,7 +152,7 @@ When will this ever happen? Should the backticks feature even exist? I guess
 #### :grey_exclamation: Idiomatic `Int`/`UInt` Usage
 
 > Use `UInt` only when you specifically need an unsigned integer type with the
-> same size as the platform's native word swize. If this is not the case, `Int`
+> same size as the platform's native word size. If this is not the case, `Int`
 > is preferred, even when the values to be stored are known to be non-negative.
 
 #### :grey_exclamation: Type Inference of Literals
@@ -213,7 +213,7 @@ let y: Double = 1
 let z = x % y
 ```
 
-You'll be reminded that Swift doesn't implictly convert types for you.
+You'll be reminded that Swift doesn't implicitly convert types for you.
 
 #### :question: Rigorous Closed Range Operator Definition
 
@@ -422,7 +422,7 @@ removed at some point in the future.
 
 Using `init?` to indicate that initialization can fail is an effective way to
 handle errors. It returns a `Type?`, implying that either a value or "nothing"
-was initialized. But when would `init!` be useful?  Implictly-unwrapped
+was initialized. But when would `init!` be useful?  Implicitly-unwrapped
 optionals indicate that you can be confident that the value you're currently
 working with is not `nil` without having to check it, but that it may have been
 `nil` at some point in its lifetime. Since you're working with a value from the
