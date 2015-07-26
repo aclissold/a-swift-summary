@@ -1,5 +1,4 @@
-A Swift Summary
-===============
+![A Swift Summary](https://cloud.githubusercontent.com/assets/4397642/8892431/e569fcca-3324-11e5-8e70-8bd4c59ec8cb.png)
 
 [*The Swift Programming Language*](https://itun.es/us/jEUH0.l) is a great book
 filled with incredibly well-written descriptions and clever examples, and I
